@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours - Travel Website</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #A8DADC; /* Pastel Blue */
+            color: #2A2A2A; /* Dark gray text */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #FFB6B9; /* Pastel Peach */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: #2A2A2A; /* Dark gray for text */
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            background-color: #F7E7A1; /* Pastel Yellow */
+            color: #2A2A2A; /* Dark gray text */
+            padding: 80px 20px;
+            font-size: 2.5em;
+            border-bottom: 3px solid #FFB6B9; /* Pastel Peach border */
+        }
+
+        .cta-btn {
+            padding: 12px 30px;
+            background-color: #FFB6B9; /* Pastel Peach */
+            color: #2A2A2A;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #F7E7A1; /* Pastel Yellow */
+        }
+
+        /* Tours Section */
+        .tours {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #F1FAEE; /* Lighter pastel blue */
+            color: #2A2A2A;
+        }
+
+        .tours h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FFB6B9; /* Pastel Peach */
+        }
+
+        .tours p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #888; /* Light gray */
+        }
+
+        /* Tour Cards */
+        .tour-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tour-card {
+            background-color: #F1FAEE; /* Lighter pastel blue */
+            color: #2A2A2A;
+            width: 280px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tour-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .tour-card h3 {
+            font-size: 1.5em;
+            margin-top: 15px;
+            color: #FFB6B9; /* Pastel Peach */
+        }
+
+        .tour-card p {
+            margin: 10px 0;
+        }
+
+        .tour-card a {
+            padding: 10px 25px;
+            background-color: #F7E7A1; /* Pastel Yellow */
+            color: #2A2A2A;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .tour-card a:hover {
+            background-color: #FFB6B9; /* Pastel Peach */
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFB6B9; /* Pastel Peach */
+            color: #2A2A2A;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Explore the World with Us</h1>
+        <p>Your dream vacation is just a click away!</p>
+        <a href="tours.html" class="cta-btn">Browse Our Tours</a>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours">
+        <h1>Our Tour Packages</h1>
+        <p>Explore amazing destinations with our carefully curated tours. Let us take you on an unforgettable adventure!</p>
+        <div class="tour-cards">
+            <div class="tour-card">
+                <img src="bali.jpg" alt="Bali Tour">
+                <h3>Bali Getaway</h3>
+                <p>7 days in Bali with all-inclusive tour packages, including sightseeing, meals, and transfers.</p>
+                <a href="contact.html">Book Now</a>
+            </div>
+            <div class="tour-card">
+                <img src="italy.jpg" alt="Italy Tour">
+                <h3>Italy Adventure</h3>
+                <p>10 days tour to Italy exploring Rome, Venice, Florence, and more. Includes luxury accommodations.</p>
+                <a href="contact.html">Book Now</a>
+            </div>
+            <div class="tour-card">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris Romance</h3>
+                <p>A 5-day romantic getaway in Paris with tours to the Eiffel Tower, Louvre, and more.</p>
+                <a href="contact.html">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Travel Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

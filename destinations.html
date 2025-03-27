@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travel Website</title>
+    <style>
+        /* Reusing the same styles from the previous code */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #A8DADC; /* Pastel Blue */
+            color: #2A2A2A; /* Dark gray text */
+        }
+
+        header {
+            background-color: #FFB6B9; /* Pastel Peach */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: #2A2A2A;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .destinations {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #F1FAEE; /* Light pastel blue */
+        }
+
+        .destinations h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FFB6B9; /* Pastel Peach */
+        }
+
+        .destination-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .destination-card {
+            background-color: #F7E7A1; /* Pastel Yellow */
+            color: #2A2A2A;
+            width: 280px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .destination-card h3 {
+            font-size: 1.5em;
+            margin-top: 15px;
+            color: #FFB6B9; /* Pastel Peach */
+        }
+
+        .destination-card p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFB6B9;
+            color: #2A2A2A;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Destinations Section -->
+    <section class="destinations">
+        <h1>Top Destinations</h1>
+        <p>Discover the world's most beautiful and exotic destinations.</p>
+        <div class="destination-cards">
+            <div class="destination-card">
+                <img src="bali.jpg" alt="Bali">
+                <h3>Bali</h3>
+                <p>Experience the beaches and culture of Bali.</p>
+            </div>
+            <div class="destination-card">
+                <img src="italy.jpg" alt="Italy">
+                <h3>Italy</h3>
+                <p>Explore the rich history and stunning landscapes of Italy.</p>
+            </div>
+            <div class="destination-card">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Fall in love with the charm of Paris.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Travel Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
